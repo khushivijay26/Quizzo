@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #009688;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.custom-box {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-box::before,
+.custom-box::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.custom-box.hide {
+    display: none;
+}
+
+.home-box h3 {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.home-box.btn {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 15px 45px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.quiz-box .question-text,
+.quiz-box .option-container,
+.quiz-box .next-question-btn {
+    width: 100%;
+    float: left;
+}
+
+.quiz-box .question-text {
+    font-size: 22px;
+    color: #000;
+    line-height: 28px;
+    font-family: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.quiz-box .option-container .option {
+    background-color: #ccc;
+    padding: 13px 15px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.quiz-box .option-container .option:hover {
+    background-color: black;
+    color: white;
+}
+
+.quiz-box .btn {
+    margin: 15px 0;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.result-box.hide {
+    display: none;
+}
+
+.result-box h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #009688;
+}
+
+.result {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.result-box .btn {
+    margin-top: 1rem;
+}
+
+.userLabel {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+.userDetails {
+    padding: 0.25rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.quizBoxUserName {
+    font-size: 19px;
+    font-weight: 400;
+    color: grey;
+}
+
+@media(max-width: 767px) {
+    .result-box .btn {
+        margin-bottom: 15px;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
+
+.table-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+table,
+th,
+td {
+    margin: auto;
+    border: 1px solid;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.option.selected {
+    background-color: black;
+    color: white;
+    pointer-events: none;
+}

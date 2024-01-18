@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Quiz-o-mania</title>
+</head>
+
+<body>
+    <div class="home-box custom-box">
+        <h3 class="start-heading">Have a break, Have a Quizzo!</h3>
+        <label for="username" class="userLabel">Username:</label>
+        <input type="text" id="username" name="username" class="userDetails" required>
+        <br>
+        <label for="email" class="userLabel">Email:</label>
+        <input type="email" id="email" name="email" class="userDetails" required>
+        <br>
+        <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="user-info">
+            <p class="quizBoxUserName">Username: <span id="displayUsername"></span></p>
+        </div>
+        <hr>
+
+        <div class="question-text">
+
+        </div>
+        <div class="option-container">
+
+        </div>
+        <div class="next-question-btn">
+            <button onclick="back()" class="btn back-button">Back</button>
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+    </div>
+
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table id="userTable">
+            <thead class="headingTable">
+                <tr class="rows">
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button class="btn restart-btn" onclick="goToHome()">Restart Quiz</button>
+    </div>
+    
+
+    <script src="question.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
